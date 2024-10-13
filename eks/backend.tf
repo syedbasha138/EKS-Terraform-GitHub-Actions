@@ -7,10 +7,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "mybucketforpracticejenkinsserver"
+    bucket         = "myawsbucketnowforrun"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
-    dynamodb_table = "lockforstatefile"
+    dynamodb_table = "mylocksforpractice"
     encrypt        = true
   }
 }
